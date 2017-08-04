@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<title></title>
+<script type="text/javascript">//<![CDATA[
+window.onload=function(){
+function digitized(){
+	var d1 = new Date();
+	var d2 = new Date("1997/07/24");
+	var diff = Math.abs(d1-d2);
+	document.getElementById('time').innerHTML=diff/31536000000;
+  setTimeout(digitized,100);
+}
+digitized();
+}//]]> 
+</script>
+<link href="https://fonts.googleapis.com/css?family=Raleway|Sedgwick+Ave+Display|Source+Sans+Pro" rel="stylesheet">
+<style type="text/css">
+#time{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 48px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+</style>
+</head>
+<body>
+  <h1 id="time">20.063022816400306</h1>
+</body>
+</html>
